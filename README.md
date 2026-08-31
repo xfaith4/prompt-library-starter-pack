@@ -8,6 +8,52 @@ A structured prompt library for repeatable, high-value work in coding, review, p
 - Store only your highest-frequency prompts in a browser plugin or clipboard manager.
 - Revise prompts in this library first, then copy stable versions into quick-access tools.
 
+## Install into VS Code Prompt Library
+
+VS Code supports user-level prompt files under the user profile prompt directory.
+This repo includes scripts that install all `.prompt.md` files into that global location so prompts are available in workflow without opening this repository.
+
+### Install for VS Code Stable
+
+```powershell
+pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\Install-VSCode-Prompts.ps1
+```
+
+### Install for VS Code Insiders
+
+```powershell
+pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\Install-VSCode-Prompts.ps1 -Channel Insiders
+```
+
+### Install for both Stable and Insiders
+
+```powershell
+pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\Install-VSCode-Prompts.ps1 -Channel Both
+```
+
+### Sync and remove stale installed prompts
+
+Use this when prompts were renamed or removed in this repo and you want the installed VS Code copy to match exactly.
+
+```powershell
+pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\Install-VSCode-Prompts.ps1 -PruneStale
+```
+
+### Uninstall
+
+```powershell
+pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\Uninstall-VSCode-Prompts.ps1 -Channel Both
+```
+
+### Run from VS Code Tasks
+
+This repo includes ready tasks in [.vscode/tasks.json](.vscode/tasks.json):
+
+- Prompt Library: Install to VS Code
+- Prompt Library: Sync to VS Code (Prune Stale)
+
+Use Run Task in VS Code and select one of those entries.
+
 ## Folder layout
 
 - `00-governance/` — standards, naming, maintenance rules
@@ -64,4 +110,3 @@ This library works best as:
 
 - a folder inside your main engineering repo, or
 - a separate private repo named something like `prompt-library`
-

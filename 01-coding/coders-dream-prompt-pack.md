@@ -346,4 +346,3 @@ When you build this library out further, these categories are usually high value
 - production hardening
 - executive summary generation
 - writing and rewriting
-

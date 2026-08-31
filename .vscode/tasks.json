@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "msbuild",
+      "args": [
+        "/property:GenerateFullPaths=true",
+        "/t:build",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Quality Gate: Lint + Tests",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "./tools/Run-QualityGate.ps1"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Prompt Library: Install to VS Code",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "./tools/Install-VSCode-Prompts.ps1"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Prompt Library: Sync to VS Code (Prune Stale)",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "./tools/Install-VSCode-Prompts.ps1",
+        "-PruneStale"
+      ],
+      "group": "build"
+    }
+  ]
+}
