@@ -6,6 +6,7 @@ Name prompt files using the pattern:
 <Category>-<Prompt-Name>.prompt.md
 
 Rules:
+
 - Use Title-Case words separated by hyphens.
 - Keep names concise but descriptive.
 - Start with the functional category.
@@ -14,6 +15,7 @@ Rules:
 - Archive older variants rather than cluttering the active library.
 
 Preferred categories:
+
 - Coding
 - Review
 - Planning
@@ -22,6 +24,7 @@ Preferred categories:
 - Governance
 
 Examples:
+
 - Planning-Approval-Roadmap.prompt.md
 - Review-Hardening-Pass.prompt.md
 - Writing-Revise-User-Writing.prompt.md

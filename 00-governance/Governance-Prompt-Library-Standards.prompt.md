@@ -5,6 +5,7 @@ description: Operating standard for writing, maintaining, and retiring prompts i
 When creating or revising prompts for this library, optimize for clarity, repeatability, strong execution control, and high signal-to-noise ratio.
 
 Standards:
+
 - Use direct, unambiguous language.
 - State the intended authority level clearly.
 - Make required actions explicit.
@@ -17,6 +18,7 @@ Standards:
 - Keep each prompt file to YAML frontmatter (a one-line description) plus the prompt body only, so files install cleanly as Copilot prompt files and Claude Code slash commands.
 
 Maintenance rules:
+
 - Promote prompts only after real use validates them.
 - Revise prompts when they produce weak, ambiguous, or inconsistent agent behavior.
 - Archive superseded prompts instead of deleting them outright.
