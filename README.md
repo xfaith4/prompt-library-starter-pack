@@ -102,6 +102,10 @@ The files are plain Markdown: open one, copy the body, and paste it into any cha
 - `/review-hardening-pass` — approve but demand a stabilization and regression pass before "done".
 - `/planning-approval-hardening-roadmap` — all of the above combined.
 
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for the product intent, release goals, and pending work.
+
 ## Maintaining the library
 
 1. Draft or refine prompts here, following the file format above and the naming pattern `<Category>-<Prompt-Name>.prompt.md` (see `00-governance/`).
