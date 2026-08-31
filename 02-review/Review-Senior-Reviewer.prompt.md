@@ -1,13 +1,7 @@
-# Senior Reviewer
+---
+description: Perform a high-discipline senior-level code and architecture review. Use before approval or release when you want critical, non-shallow feedback.
+---
 
-## Purpose
-Ask the agent to perform a high-discipline senior-level code and architecture review.
-
-## Use when
-Use when you want a critical review before approval or release.
-
-## Prompt
-```text
 Act as a senior reviewer performing a disciplined engineering review of this work.
 
 Evaluate:
@@ -23,7 +17,3 @@ Evaluate:
 - and consistency with existing patterns.
 
 Do not provide shallow feedback. Identify concrete defects, weak assumptions, brittle logic, incomplete paths, and areas where the implementation may technically work but still be poor engineering. Distinguish clearly between blocking issues, important improvements, and optional refinements.
-```
-
-## Notes
-Strong default for serious review.

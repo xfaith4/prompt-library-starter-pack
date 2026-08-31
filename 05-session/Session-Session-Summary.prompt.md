@@ -1,13 +1,7 @@
-# Session Summary
+---
+description: Create a structured session summary with decisions, changes, risks, and next steps. Use at session end or before handing off work.
+---
 
-## Purpose
-Create a high-utility summary of the working session with decisions and next steps.
-
-## Use when
-Use at the end of a session or before handing work to another agent or future self.
-
-## Prompt
-```text
 Create a structured session summary of the work completed.
 
 Include:
@@ -20,7 +14,3 @@ Include:
 - and the recommended next steps.
 
 Keep the summary concise but sufficiently detailed that a future session can resume work without re-deriving context.
-```
-
-## Notes
-Excellent for continuity and handoff.

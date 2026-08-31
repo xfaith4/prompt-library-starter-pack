@@ -2,39 +2,26 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build",
-      "type": "shell",
-      "command": "msbuild",
-      "args": [
-        "/property:GenerateFullPaths=true",
-        "/t:build",
-        "/consoleloggerparameters:NoSummary"
+      "label": "Prompt Library: Install All (VS Code + Claude Code)",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Prompt Library: Install to VS Code (Copilot)",
+        "Prompt Library: Install to Claude Code"
       ],
-      "group": "build"
+      "problemMatcher": []
     },
     {
-      "label": "Quality Gate: Lint + Tests",
+      "label": "Prompt Library: Install to VS Code (Copilot)",
       "type": "shell",
       "command": "pwsh",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
         "Bypass",
-        "./tools/Run-QualityGate.ps1"
-      ],
-      "group": "build"
-    },
-    {
-      "label": "Prompt Library: Install to VS Code",
-      "type": "shell",
-      "command": "pwsh",
-      "args": [
-        "-NoProfile",
-        "-ExecutionPolicy",
-        "Bypass",
+        "-File",
         "./tools/Install-VSCode-Prompts.ps1"
       ],
-      "group": "build"
+      "problemMatcher": []
     },
     {
       "label": "Prompt Library: Sync to VS Code (Prune Stale)",
@@ -44,10 +31,38 @@
         "-NoProfile",
         "-ExecutionPolicy",
         "Bypass",
+        "-File",
         "./tools/Install-VSCode-Prompts.ps1",
         "-PruneStale"
       ],
-      "group": "build"
+      "problemMatcher": []
+    },
+    {
+      "label": "Prompt Library: Install to Claude Code",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "./tools/Install-ClaudeCode-Prompts.ps1"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Prompt Library: Sync to Claude Code (Prune Stale)",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "./tools/Install-ClaudeCode-Prompts.ps1",
+        "-PruneStale"
+      ],
+      "problemMatcher": []
     }
   ]
 }

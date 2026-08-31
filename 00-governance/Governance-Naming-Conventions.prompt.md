@@ -1,13 +1,7 @@
-# Naming Conventions
+---
+description: Standardize prompt file naming so the library stays searchable and organized. Use when adding or renaming prompt files.
+---
 
-## Purpose
-Standardize how prompt files are named so they remain searchable and organized over time.
-
-## Use when
-Use when adding new prompt files or renaming existing ones.
-
-## Prompt
-```text
 Name prompt files using the pattern:
 <Category>-<Prompt-Name>.prompt.md
 
@@ -26,10 +20,8 @@ Preferred categories:
 - Writing
 - Session
 - Governance
-```
 
-## Notes
 Examples:
-- `Planning-Approval-Roadmap.prompt.md`
-- `Review-Hardening-Pass.prompt.md`
-- `Writing-Revise-User-Writing.prompt.md`
+- Planning-Approval-Roadmap.prompt.md
+- Review-Hardening-Pass.prompt.md
+- Writing-Revise-User-Writing.prompt.md

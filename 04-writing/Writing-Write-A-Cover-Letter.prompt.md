@@ -1,13 +1,7 @@
-# Write a Cover Letter
+---
+description: Generate a tailored, credible cover letter from supplied job and background details. Use for a polished first draft when applying for a role.
+---
 
-## Purpose
-Generate a strong tailored cover letter from supplied job and background details.
-
-## Use when
-Use when applying for a role and you want a polished first draft quickly.
-
-## Prompt
-```text
 Write a professional cover letter tailored to the provided role and background.
 
 Requirements:
@@ -21,7 +15,3 @@ Produce:
 1. a primary polished version,
 2. a slightly more formal version,
 3. and a concise version suitable for editing.
-```
-
-## Notes
-Easy to adapt into resume-adjacent workflows.
