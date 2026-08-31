@@ -210,7 +210,7 @@ Use engineering judgment in how best to carry this forward, but remain within th
 
 ---
 
-# Default Four
+## Default Four
 
 If you want the shortest high-value core set, use these four most often.
 
@@ -254,7 +254,7 @@ Before considering the work complete, perform a full code review and hardening p
 
 ---
 
-# Suggested File Names if Split Into Individual Prompt Files
+## Suggested File Names if Split Into Individual Prompt Files
 
 - `Approval.prompt.txt`
 - `Approval-Roadmap.prompt.txt`
@@ -268,7 +268,7 @@ Before considering the work complete, perform a full code review and hardening p
 
 ---
 
-# Recommended Storage Approaches
+## Recommended Storage Approaches
 
 ## Good: Browser plugin prompt library
 
@@ -324,7 +324,7 @@ That gives you speed and durability.
 
 ---
 
-# Recommended Next Step
+## Recommended Next Step
 
 Use this Markdown pack as the canonical source in VS Code, then copy your most-used prompts into the browser plugin for immediate access.
 
@@ -332,7 +332,7 @@ That usually works better than trying to make the plugin your only source of tru
 
 ---
 
-# Optional Expansion Categories
+## Optional Expansion Categories
 
 When you build this library out further, these categories are usually high value:
 
